@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/20109/Desktop/files_assignment/Department.cpp">
+			<Option target="files_assignment"/>
+		</Unit>
 		<Unit filename="C:/Users/20109/Desktop/files_assignment/Employee.cpp">
 			<Option target="files_assignment"/>
 		</Unit>
-		<Unit filename="C:/Users/20109/Desktop/files_assignment/department.cpp">
+		<Unit filename="C:/Users/20109/Desktop/files_assignment/file_control.cpp">
+			<Option target="files_assignment"/>
+		</Unit>
+		<Unit filename="C:/Users/20109/Desktop/files_assignment/file_control.h">
 			<Option target="files_assignment"/>
 		</Unit>
 		<Unit filename="C:/Users/20109/Desktop/files_assignment/main.cpp">

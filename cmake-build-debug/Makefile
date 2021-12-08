@@ -141,6 +141,33 @@ files_assignment/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/build
 .PHONY : files_assignment/fast
 
+Department.obj: Department.cpp.obj
+
+.PHONY : Department.obj
+
+# target to build an object file
+Department.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.obj
+.PHONY : Department.cpp.obj
+
+Department.i: Department.cpp.i
+
+.PHONY : Department.i
+
+# target to preprocess a source file
+Department.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.i
+.PHONY : Department.cpp.i
+
+Department.s: Department.cpp.s
+
+.PHONY : Department.s
+
+# target to generate assembly for a file
+Department.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.s
+.PHONY : Department.cpp.s
+
 Employee.obj: Employee.cpp.obj
 
 .PHONY : Employee.obj
@@ -168,32 +195,32 @@ Employee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Employee.cpp.s
 .PHONY : Employee.cpp.s
 
-department.obj: department.cpp.obj
+file_control.obj: file_control.cpp.obj
 
-.PHONY : department.obj
+.PHONY : file_control.obj
 
 # target to build an object file
-department.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/department.cpp.obj
-.PHONY : department.cpp.obj
+file_control.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.obj
+.PHONY : file_control.cpp.obj
 
-department.i: department.cpp.i
+file_control.i: file_control.cpp.i
 
-.PHONY : department.i
+.PHONY : file_control.i
 
 # target to preprocess a source file
-department.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/department.cpp.i
-.PHONY : department.cpp.i
+file_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.i
+.PHONY : file_control.cpp.i
 
-department.s: department.cpp.s
+file_control.s: file_control.cpp.s
 
-.PHONY : department.s
+.PHONY : file_control.s
 
 # target to generate assembly for a file
-department.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/department.cpp.s
-.PHONY : department.cpp.s
+file_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.s
+.PHONY : file_control.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -231,12 +258,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... files_assignment
+	@echo ... Department.obj
+	@echo ... Department.i
+	@echo ... Department.s
 	@echo ... Employee.obj
 	@echo ... Employee.i
 	@echo ... Employee.s
-	@echo ... department.obj
-	@echo ... department.i
-	@echo ... department.s
+	@echo ... file_control.obj
+	@echo ... file_control.i
+	@echo ... file_control.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -5,14 +5,47 @@
 #include <cstring>
 #include "Employee.cpp"
 #include "Department.cpp"
+
 using namespace std;
 
+
+
+struct employee {
+    char Employee_ID[13]; //primarykey
+    char Dept_ID[30]; //sec.key
+    char Employee_Name[50];
+    char Employee_Position[50];
+};
+struct department {
+    char Dept_ID[30]; //primarykey
+    char Dept_Name[50]; //sec.Key
+    char Dept_Manager[50];
+};
+
+int mySize(char array[]){
+    int i=0;
+    while (array[i]){
+
+    }
+}
+employee AddEmployee() {
+    employee e1;
+    cout << "Enter employee ID: ";
+    cin >> e1.Employee_ID;
+    cout << "Enter employee Dept_ID: ";
+    cin >> e1.Employee_Name;
+    cout << "Enter employee name: ";
+    cin >> e1.Employee_Name;
+}
+
 int main() {
-    Employee E;
-    Department D;
+    fstream employeeFile;
+    employeeFile.open("employeeFile.txt", ios::app | ios::in | ios::out);
+    fstream departmentFile;
+    employeeFile.open("departmentFile.txt", ios::app | ios::in | ios::out);
+
     int option;
-    E.OpenFile();
-    D.OpenFile1();
+
     do {
         cout << "Available Options:\n\n";
         cout << "Add New Employee         (1)\n";
@@ -35,37 +68,33 @@ int main() {
         // Call function on the bases of the
         // above option
         if (option == 1) {
-            cout << "delete employee by ID >>";
-            E.AddNewEmployee();
-        }
-        else if (option == 2) {
+            cout << "Add new employee >>";
+            char Employee_ID[13]; //primarykey
+            char Dept_ID[30]; //sec.key
+            char Employee_Name[50];
+            char Employee_Position[50];
+            cin>>
+
+        } else if (option == 2) {
             cout << "delete department by ID >>";
             D.AddNewDepartment();
-        }
-        else if (option == 3) {
+        } else if (option == 3) {
             cout << "delete employee by ID >>";
             E.DeleteEmployee();
-        }
-        else if (option == 4) {
+        } else if (option == 4) {
             cout << "delete department by ID >>";
             D.DeleteDepartment();
-        }
-        else if (option == 5) {
+        } else if (option == 5) {
+
+        } else if (option == 6) {
+
+        } else if (option == 7) {
+
+        } else if (option == 8) {
             return;
-        }
-        else if (option == 6) {
+        } else if (option == 9) {
             return;
-        }
-        else if (option == 7) {
-            return;
-        }
-        else if (option == 8) {
-            return;
-        }
-        else if (option == 9) {
-            return;
-        }
-        else {
+        } else {
             cout << "Expected Options"
                  << " are 1/2/3/4/5/6/7/8/9/10";
         }
