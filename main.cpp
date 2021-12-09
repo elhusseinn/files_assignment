@@ -149,12 +149,14 @@ int returnByteOffset(fstream &file, int ID) {
 
 
 }
-void DeleteEmployee(fstream employeeFile, int ID){
+
+void DeleteRecord(fstream &File, int ID){
     // seek record with EMP_ID  = ID
     // curr pointer will be pointing to the start of the record then add '*'
-
-
-
+    int offset = returnByteOffset(File, ID);
+    File.seekp(offset +2, ios::beg);
+    File.put('*');
+    File.close();
 
 }
 
@@ -165,9 +167,6 @@ int main() {
     int option;
 
     do {
-        employeeFile.open("employeeFile.txt", ios::app | ios::in |ios::out);
-        departmentFile.open("departmentFile.txt", ios::app| ios::in|ios::out);
-        primaryIndex.open("primaryIndex.txt", ios::app| ios::in|ios::out);
         cout << "Available Options:\n\n";
         cout << "Add New Employee         (1)\n";
         cout << "Add New Department       (2)\n";
@@ -184,19 +183,29 @@ int main() {
         cin >> option;
 
         if (option == 1) {
-
+            employeeFile.open("employeeFile.txt", ios::app | ios::in |ios::out);
             AddEmployee(employeeFile);
 
         }
         else if (option == 2) {
+            departmentFile.open("departmentFile.txt", ios::app| ios::in|ios::out);
             AddDepartment(departmentFile);
 
         }
         else if (option == 3) {
-
+            employeeFile.open("employeeFile.txt", ios::in |ios::out);
+            cout<< "Enter Employee ID: ";
+            int id;
+            cin>>id;
+            DeleteRecord(employeeFile, id);
 
         }
         else if (option == 4) {
+            departmentFile.open("departmentFile.txt", ios::in|ios::out);
+            cout<< "Enter Department ID: ";
+            int id;
+            cin>>id;
+            DeleteRecord(departmentFile, id);
         }
         else if (option == 5) {
 
