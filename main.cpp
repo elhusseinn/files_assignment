@@ -13,11 +13,13 @@ struct employee {
     char Dept_ID[30]; //sec.key
     char Employee_Name[50];
     char Employee_Position[50];
+    short Record_Length;
 };
 struct department {
     char Dept_ID[30]; //primarykey
     char Dept_Name[50]; //sec.Key
     char Dept_Manager[50];
+    short Record_Length;
 };
 
 int mySize(char array[]){
@@ -27,7 +29,8 @@ int mySize(char array[]){
     }
 }
 void AddEmployee(fstream file) {
-    employee e1; string input ="";
+    cout << "Add new employee >>"<<endl;
+    employee e1 ; string input ="";
     cout << "Enter employee ID: ";
     cin >> e1.Employee_ID;
     cout << "Enter employee Dept_ID: ";
@@ -42,17 +45,16 @@ void AddEmployee(fstream file) {
     input=input+e1.Employee_Name+' ';
     input=input+e1.Employee_Position+' ';
     int i = input.size();
-    char record_Length[2] = {static_cast<char>(i)};
-
-    file<<record_Length;
+    e1.Record_Length = i -1;
+    file<<e1.Record_Length;
     file<<e1.Employee_ID;
-    file<<' ';
+    file<<'|';
     file<<e1.Dept_ID;
-    file<<' ';
+    file<<'|';
     file<<e1.Employee_Name;
-    file<<' ';
+    file<<'|';
     file<<e1.Employee_Position;
-    file<<' ';
+    file.close();
 
 
 
@@ -60,14 +62,13 @@ void AddEmployee(fstream file) {
 }
 
 int main() {
-    ofstream employeeFile("employeeFile.txt");
-    //employeeFile.open("employeeFile.txt");
+    fstream employeeFile;
     fstream departmentFile;
-    employeeFile.open("departmentFile.txt", ios::app | ios::in | ios::out);
-
     int option;
 
     do {
+        employeeFile.open("employeeFile.txt", ios::app);
+        departmentFile.open("departmentFile.txt", ios::app | ios::in | ios::out);
         cout << "Available Options:\n\n";
         cout << "Add New Employee         (1)\n";
         cout << "Add New Department       (2)\n";
@@ -89,7 +90,7 @@ int main() {
         // Call function on the bases of the
         // above option
         if (option == 1) {
-            cout << "Add new employee >>";
+            cout << "Add new employee >>"<<endl;
             employee e1 ; string input ="";
             cout << "Enter employee ID: ";
             cin >> e1.Employee_ID;
@@ -105,23 +106,45 @@ int main() {
             input=input+e1.Employee_Name+' ';
             input=input+e1.Employee_Position+' ';
             int i = input.size();
-            char record_Length[2] = {static_cast<char>(i)};
-
-            employeeFile<<record_Length;
-            employeeFile<<input;
-         /*   employeeFile<<e1.Employee_ID;
-            employeeFile<<' ';
+            e1.Record_Length = i -1;
+            employeeFile<<e1.Record_Length;
+            employeeFile<<e1.Employee_ID;
+            employeeFile<<'|';
             employeeFile<<e1.Dept_ID;
-            employeeFile<<' ';
+            employeeFile<<'|';
             employeeFile<<e1.Employee_Name;
-            employeeFile<<' ';
+            employeeFile<<'|';
             employeeFile<<e1.Employee_Position;
-            employeeFile<<' ';
-            employeeFile.close();*/
-
+            employeeFile.close();
 
 
         } else if (option == 2) {
+            cout << "Add new Department >>"<<endl;
+            department d1 ; string input ="";
+            cout << "Enter employee ID: ";
+            cin >> d1.Employee_ID;
+            cout << "Enter employee Dept_ID: ";
+            cin >> d1.Dept_ID;
+            cout << "Enter employee name: ";
+            cin >> d1.Employee_Name;
+            cout << "Enter employee position: ";
+            cin >> d1.Employee_Position;
+
+            input=input+d1.Employee_ID+' ';
+            input=input+d1.Dept_ID+' ';
+            input=input+d1.Employee_Name+' ';
+            input=input+d1.Employee_Position+' ';
+            int i = input.size();
+            e1.Record_Length = i -1;
+            employeeFile<<e1.Record_Length;
+            employeeFile<<e1.Employee_ID;
+            employeeFile<<'|';
+            employeeFile<<e1.Dept_ID;
+            employeeFile<<'|';
+            employeeFile<<e1.Employee_Name;
+            employeeFile<<'|';
+            employeeFile<<e1.Employee_Position;
+            employeeFile.close();
 
         } else if (option == 3) {
 
@@ -145,7 +168,7 @@ int main() {
     } while (option != 10);
 
    // employeeFile.close();
-    departmentFile.close();
+    //departmentFile.close();
 
     cout << "Exit....Saving to file" << endl;
     return 0;
