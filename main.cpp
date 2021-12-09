@@ -3,8 +3,6 @@
 #include <cstdlib>
 #include <string>
 #include <cstring>
-#include "Employee.cpp"
-#include "Department.cpp"
 
 using namespace std;
 
@@ -28,19 +26,42 @@ int mySize(char array[]){
 
     }
 }
-employee AddEmployee() {
-    employee e1;
+void AddEmployee(fstream file) {
+    employee e1; string input ="";
     cout << "Enter employee ID: ";
     cin >> e1.Employee_ID;
     cout << "Enter employee Dept_ID: ";
-    cin >> e1.Employee_Name;
+    cin >> e1.Dept_ID;
     cout << "Enter employee name: ";
     cin >> e1.Employee_Name;
+    cout << "Enter employee position: ";
+    cin >> e1.Employee_Position;
+
+    input=input+e1.Employee_ID+' ';
+    input=input+e1.Dept_ID+' ';
+    input=input+e1.Employee_Name+' ';
+    input=input+e1.Employee_Position+' ';
+    int i = input.size();
+    char record_Length[2] = {static_cast<char>(i)};
+
+    file<<record_Length;
+    file<<e1.Employee_ID;
+    file<<' ';
+    file<<e1.Dept_ID;
+    file<<' ';
+    file<<e1.Employee_Name;
+    file<<' ';
+    file<<e1.Employee_Position;
+    file<<' ';
+
+
+
+
 }
 
 int main() {
-    fstream employeeFile;
-    employeeFile.open("employeeFile.txt", ios::app | ios::in | ios::out);
+    ofstream employeeFile("employeeFile.txt");
+    //employeeFile.open("employeeFile.txt");
     fstream departmentFile;
     employeeFile.open("departmentFile.txt", ios::app | ios::in | ios::out);
 
@@ -69,21 +90,44 @@ int main() {
         // above option
         if (option == 1) {
             cout << "Add new employee >>";
-            char Employee_ID[13]; //primarykey
-            char Dept_ID[30]; //sec.key
-            char Employee_Name[50];
-            char Employee_Position[50];
-            cin>>
+            employee e1 ; string input ="";
+            cout << "Enter employee ID: ";
+            cin >> e1.Employee_ID;
+            cout << "Enter employee Dept_ID: ";
+            cin >> e1.Dept_ID;
+            cout << "Enter employee name: ";
+            cin >> e1.Employee_Name;
+            cout << "Enter employee position: ";
+            cin >> e1.Employee_Position;
+
+            input=input+e1.Employee_ID+' ';
+            input=input+e1.Dept_ID+' ';
+            input=input+e1.Employee_Name+' ';
+            input=input+e1.Employee_Position+' ';
+            int i = input.size();
+            char record_Length[2] = {static_cast<char>(i)};
+
+            employeeFile<<record_Length;
+            employeeFile<<input;
+         /*   employeeFile<<e1.Employee_ID;
+            employeeFile<<' ';
+            employeeFile<<e1.Dept_ID;
+            employeeFile<<' ';
+            employeeFile<<e1.Employee_Name;
+            employeeFile<<' ';
+            employeeFile<<e1.Employee_Position;
+            employeeFile<<' ';
+            employeeFile.close();*/
+
+
 
         } else if (option == 2) {
-            cout << "delete department by ID >>";
-            D.AddNewDepartment();
+
         } else if (option == 3) {
-            cout << "delete employee by ID >>";
-            E.DeleteEmployee();
+
+
         } else if (option == 4) {
-            cout << "delete department by ID >>";
-            D.DeleteDepartment();
+
         } else if (option == 5) {
 
         } else if (option == 6) {
@@ -91,17 +135,18 @@ int main() {
         } else if (option == 7) {
 
         } else if (option == 8) {
-            return;
+
         } else if (option == 9) {
-            return;
+
         } else {
             cout << "Expected Options"
                  << " are 1/2/3/4/5/6/7/8/9/10";
         }
     } while (option != 10);
 
-    E.saveToFile();
-    D.saveToFile1();
+   // employeeFile.close();
+    departmentFile.close();
+
     cout << "Exit....Saving to file" << endl;
     return 0;
 }

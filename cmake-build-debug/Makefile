@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\20109\Desktop\files_assignment
+CMAKE_SOURCE_DIR = C:\Users\Elhussein\CLionProjects\files_assignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\20109\Desktop\files_assignment\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = C:\Users\20109\Desktop\files_assignment\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles C:\Users\20109\Desktop\files_assignment\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\CMakeFiles C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,87 +141,6 @@ files_assignment/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/build
 .PHONY : files_assignment/fast
 
-Department.obj: Department.cpp.obj
-
-.PHONY : Department.obj
-
-# target to build an object file
-Department.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.obj
-.PHONY : Department.cpp.obj
-
-Department.i: Department.cpp.i
-
-.PHONY : Department.i
-
-# target to preprocess a source file
-Department.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.i
-.PHONY : Department.cpp.i
-
-Department.s: Department.cpp.s
-
-.PHONY : Department.s
-
-# target to generate assembly for a file
-Department.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Department.cpp.s
-.PHONY : Department.cpp.s
-
-Employee.obj: Employee.cpp.obj
-
-.PHONY : Employee.obj
-
-# target to build an object file
-Employee.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Employee.cpp.obj
-.PHONY : Employee.cpp.obj
-
-Employee.i: Employee.cpp.i
-
-.PHONY : Employee.i
-
-# target to preprocess a source file
-Employee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Employee.cpp.i
-.PHONY : Employee.cpp.i
-
-Employee.s: Employee.cpp.s
-
-.PHONY : Employee.s
-
-# target to generate assembly for a file
-Employee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/Employee.cpp.s
-.PHONY : Employee.cpp.s
-
-file_control.obj: file_control.cpp.obj
-
-.PHONY : file_control.obj
-
-# target to build an object file
-file_control.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.obj
-.PHONY : file_control.cpp.obj
-
-file_control.i: file_control.cpp.i
-
-.PHONY : file_control.i
-
-# target to preprocess a source file
-file_control.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.i
-.PHONY : file_control.cpp.i
-
-file_control.s: file_control.cpp.s
-
-.PHONY : file_control.s
-
-# target to generate assembly for a file
-file_control.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\files_assignment.dir\build.make CMakeFiles/files_assignment.dir/file_control.cpp.s
-.PHONY : file_control.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -258,15 +177,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... files_assignment
-	@echo ... Department.obj
-	@echo ... Department.i
-	@echo ... Department.s
-	@echo ... Employee.obj
-	@echo ... Employee.i
-	@echo ... Employee.s
-	@echo ... file_control.obj
-	@echo ... file_control.i
-	@echo ... file_control.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

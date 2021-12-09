@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\20109\Desktop\files_assignment
+CMAKE_SOURCE_DIR = C:\Users\Elhussein\CLionProjects\files_assignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\20109\Desktop\files_assignment\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/files_assignment.dir/depend.make
@@ -77,75 +77,30 @@ include CMakeFiles/files_assignment.dir/flags.make
 
 CMakeFiles/files_assignment.dir/main.cpp.obj: CMakeFiles/files_assignment.dir/flags.make
 CMakeFiles/files_assignment.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/files_assignment.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\files_assignment.dir\main.cpp.obj -c C:\Users\20109\Desktop\files_assignment\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/files_assignment.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\files_assignment.dir\main.cpp.obj -c C:\Users\Elhussein\CLionProjects\files_assignment\main.cpp
 
 CMakeFiles/files_assignment.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files_assignment.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20109\Desktop\files_assignment\main.cpp > CMakeFiles\files_assignment.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Elhussein\CLionProjects\files_assignment\main.cpp > CMakeFiles\files_assignment.dir\main.cpp.i
 
 CMakeFiles/files_assignment.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files_assignment.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20109\Desktop\files_assignment\main.cpp -o CMakeFiles\files_assignment.dir\main.cpp.s
-
-CMakeFiles/files_assignment.dir/Department.cpp.obj: CMakeFiles/files_assignment.dir/flags.make
-CMakeFiles/files_assignment.dir/Department.cpp.obj: ../Department.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/files_assignment.dir/Department.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\files_assignment.dir\Department.cpp.obj -c C:\Users\20109\Desktop\files_assignment\Department.cpp
-
-CMakeFiles/files_assignment.dir/Department.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files_assignment.dir/Department.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20109\Desktop\files_assignment\Department.cpp > CMakeFiles\files_assignment.dir\Department.cpp.i
-
-CMakeFiles/files_assignment.dir/Department.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files_assignment.dir/Department.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20109\Desktop\files_assignment\Department.cpp -o CMakeFiles\files_assignment.dir\Department.cpp.s
-
-CMakeFiles/files_assignment.dir/Employee.cpp.obj: CMakeFiles/files_assignment.dir/flags.make
-CMakeFiles/files_assignment.dir/Employee.cpp.obj: ../Employee.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/files_assignment.dir/Employee.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\files_assignment.dir\Employee.cpp.obj -c C:\Users\20109\Desktop\files_assignment\Employee.cpp
-
-CMakeFiles/files_assignment.dir/Employee.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files_assignment.dir/Employee.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20109\Desktop\files_assignment\Employee.cpp > CMakeFiles\files_assignment.dir\Employee.cpp.i
-
-CMakeFiles/files_assignment.dir/Employee.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files_assignment.dir/Employee.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20109\Desktop\files_assignment\Employee.cpp -o CMakeFiles\files_assignment.dir\Employee.cpp.s
-
-CMakeFiles/files_assignment.dir/file_control.cpp.obj: CMakeFiles/files_assignment.dir/flags.make
-CMakeFiles/files_assignment.dir/file_control.cpp.obj: ../file_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/files_assignment.dir/file_control.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\files_assignment.dir\file_control.cpp.obj -c C:\Users\20109\Desktop\files_assignment\file_control.cpp
-
-CMakeFiles/files_assignment.dir/file_control.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files_assignment.dir/file_control.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20109\Desktop\files_assignment\file_control.cpp > CMakeFiles\files_assignment.dir\file_control.cpp.i
-
-CMakeFiles/files_assignment.dir/file_control.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files_assignment.dir/file_control.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20109\Desktop\files_assignment\file_control.cpp -o CMakeFiles\files_assignment.dir\file_control.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Elhussein\CLionProjects\files_assignment\main.cpp -o CMakeFiles\files_assignment.dir\main.cpp.s
 
 # Object files for target files_assignment
 files_assignment_OBJECTS = \
-"CMakeFiles/files_assignment.dir/main.cpp.obj" \
-"CMakeFiles/files_assignment.dir/Department.cpp.obj" \
-"CMakeFiles/files_assignment.dir/Employee.cpp.obj" \
-"CMakeFiles/files_assignment.dir/file_control.cpp.obj"
+"CMakeFiles/files_assignment.dir/main.cpp.obj"
 
 # External object files for target files_assignment
 files_assignment_EXTERNAL_OBJECTS =
 
 files_assignment.exe: CMakeFiles/files_assignment.dir/main.cpp.obj
-files_assignment.exe: CMakeFiles/files_assignment.dir/Department.cpp.obj
-files_assignment.exe: CMakeFiles/files_assignment.dir/Employee.cpp.obj
-files_assignment.exe: CMakeFiles/files_assignment.dir/file_control.cpp.obj
 files_assignment.exe: CMakeFiles/files_assignment.dir/build.make
 files_assignment.exe: CMakeFiles/files_assignment.dir/linklibs.rsp
 files_assignment.exe: CMakeFiles/files_assignment.dir/objects1.rsp
 files_assignment.exe: CMakeFiles/files_assignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable files_assignment.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable files_assignment.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\files_assignment.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +113,6 @@ CMakeFiles/files_assignment.dir/clean:
 .PHONY : CMakeFiles/files_assignment.dir/clean
 
 CMakeFiles/files_assignment.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\20109\Desktop\files_assignment C:\Users\20109\Desktop\files_assignment C:\Users\20109\Desktop\files_assignment\cmake-build-debug C:\Users\20109\Desktop\files_assignment\cmake-build-debug C:\Users\20109\Desktop\files_assignment\cmake-build-debug\CMakeFiles\files_assignment.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Elhussein\CLionProjects\files_assignment C:\Users\Elhussein\CLionProjects\files_assignment C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug C:\Users\Elhussein\CLionProjects\files_assignment\cmake-build-debug\CMakeFiles\files_assignment.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/files_assignment.dir/depend
 
